@@ -1,0 +1,23 @@
+package day27_ForEachLoop;
+
+public class UniqueIntegers2 {
+    public static void main(String[] args) {
+
+        int[] nums = {1, 1, 2, 3, 3, 4, 1};
+
+
+        for (int each2 : nums) {
+            int count = 0;
+            for (int each : nums) {
+                if (each == each2) {
+                    count++;
+                }
+            }
+            if (count == 1) {
+                System.out.print(each2 + " ");
+            }
+        }
+
+
+    }
+}
