@@ -2,7 +2,7 @@ package day04_Variables;
 
 public class SalaryCalculator {
     public static void main(String[] args) {
-        int salary = 225;
+        int salary = 100000;
         double tax = 0.28;
         double totalTax = salary * tax;
         double salaryAfterTax = salary - totalTax;
