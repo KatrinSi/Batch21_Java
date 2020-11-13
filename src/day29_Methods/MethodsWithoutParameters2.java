@@ -6,6 +6,8 @@ public class MethodsWithoutParameters2 {
         printOddNums1to100();
         System.out.println("Hello world!");
         printOddNums1to100();
+        printEvenNums1to100();
+
 
     }
 
@@ -19,6 +21,16 @@ public class MethodsWithoutParameters2 {
         System.out.println();
 
     }
+
+    public static void printEvenNums1to100(){
+        for (int i = 1; i <= 100; i++){
+            if ( i%2 == 0){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println();
+    }
+
 
 
 }
