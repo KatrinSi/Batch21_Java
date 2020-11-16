@@ -23,7 +23,7 @@ public class Practice {
 
         */
 
-        System.out.println("Do you have garage?");
+       /* System.out.println("Do you have garage?");
         boolean garage = scan.nextBoolean();
         if (garage) {
             System.out.println("How many spots?");
@@ -41,7 +41,12 @@ public class Practice {
             }
             propertyPrice +=totalPriceSpots;
 
+        */
+
+
+        System.out.println(35.279997);
+        System.out.printf("Total: %.2f", 35.279997);
         }
     }
-}
+
 

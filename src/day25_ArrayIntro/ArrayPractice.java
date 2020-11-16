@@ -7,7 +7,7 @@ public class ArrayPractice {
 
         String[] students = new String[5];
 
-        System.out.println(students[0]);
+        System.out.println(students[0]);//null
 
 
         System.out.println("=========================================");

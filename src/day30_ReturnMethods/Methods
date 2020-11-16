@@ -1,0 +1,14 @@
+
+                                               //any data type
+Access-modifier specifier return Type methodName(parameter){
+
+            action==body==statement;
+}
+
+
+!!!void doesn't return any data. This data stays inside of a method
+void: Print statement can be plased only inside the method!
+
+main method makes the class runnable
+
+Switch DOESN'T accept Boolean, Float, Long, Double!!

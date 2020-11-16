@@ -10,15 +10,11 @@ public class ArraysDescendingOrder {
         System.out.println(Arrays.toString(nums)); //[1, 2, 3, 4, 5]
 //                          4           0
         int[] descending = new int[nums.length]; //5, 4, 3, 2, 1
-        int j = 0;
 
         for (int i = nums.length-1; i >= 0; i--){//5, 4, 3, 2, 1
             System.out.print(nums[i]+" ");
             //
         }
-
-
-
 
 
     }
