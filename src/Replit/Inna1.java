@@ -1,21 +1,28 @@
 package Replit;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Inna1 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String email = scan.next();  //craig_federighi@apple.gov
+        int[][] arr2D = {{1, 2, 3}, {4, 5, 6, 7, 8}, {9, 10, 11, 12, 13}};
 
-        String firstName = email.substring(0,1).toUpperCase() + email.substring(1,email.indexOf("_")).toLowerCase();
-        String lastName = email.substring(email.indexOf("_")+1, email.indexOf("_")+2).toUpperCase()+
-                email.substring(email.indexOf("_")+2,email.lastIndexOf("@")).toLowerCase();
-        String domain = email.substring (email.indexOf("@")+1, email.indexOf("."));
-        String topLevelDomain = email.substring (email.indexOf(".")+1);
-        System.out.println("First name: " + firstName);
-        System.out.println("Last name: " + lastName);
-        System.out.println("Domain: " + domain);
-        System.out.println("Top-Level Domain: " + topLevelDomain);
+        for (int i = arr2D.length-1;i>=0; i--){//arrays in arr2D
+            for (int j = arr2D[i].length-1; j >= 0; j-- ){
+                System.out.print(arr2D[i][j]+" ");
+            }
+            System.out.println();
+        }
     }
 }
+
+/*
+
+
+/*
+task3:
+        		13 12 11 10 9
+        		8 7 6 5 4
+        		3 2 1
+*/
 

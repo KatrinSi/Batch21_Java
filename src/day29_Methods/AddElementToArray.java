@@ -9,11 +9,11 @@ public class AddElementToArray {
         addElement(nums,4);
     }
 
-    //                            1,2,3     4
+    //                             1,2,3     4
     public static void addElement(int[] arr, int num) {
 
-        int[] result = new int[arr.length + 1];
-
+        int[] result = new int[arr.length + 1];//{1,2,3,4}
+        //                      4
         for (int i = 0; i < arr.length; i++) {
 
             result[i] = arr[i];

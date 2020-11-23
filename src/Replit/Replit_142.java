@@ -7,28 +7,20 @@ public class Replit_142 {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
 
-        int rows = 2, cols = 3;
-        int[][] arr = new int[2][3];//{{1,2,3},{4,5}}
+//                          0       1
+        int arr[][] = {{1, 2, 3}, {4, 5}};
+//                      0  1  2    3  4
 
-        for (int i = 0; i <= rows - 1; i++) {
-            for (int j = 0; j <= cols - 1; j++) {
-                arr[i][j] = inp.nextInt();
-            }//end for cols
-        }//end for rows
-
-    }
-}
-
-      //  int min = arr[0][0];
-        //TODO write your code below
-       /* for (int[] each : arr) {
-            min = arr[each][each];
-
+        int max = arr[0][0];
+        for (int[] eachArr : arr) {
+            for (int eachElement : eachArr){
+                if (eachElement > max){
+                    max = eachElement;
+                }
+            }
 
         }
-
-        System.out.println(Arrays.deepToString(arr));
-
+        System.out.println(max);
 
     }//end main
 }

@@ -1,10 +1,22 @@
 package day31_MethodOverLoading;
 
+
+import Library.StringUtility;
+
 public class FrequencyOfWord {
     public static void main(String[] args) {
         String sentence = "Java java java python python";
         String word = "java";
         System.out.println(frequencyOfWord(sentence, word));
+
+        System.out.println("==============================");
+
+        String sentence1 = "dog cat cat cat dog dog dog dog";
+        int cats = StringUtility.frequencyOfWord(sentence1, "cat");
+        System.out.println("cats: "+cats);
+        int dogs = StringUtility.frequencyOfWord(sentence1, "dog");
+        System.out.println("dogs:"+dogs);
+        System.out.println(cats == dogs);
 
     }
     public static int frequencyOfWord (String sentence, String word){
