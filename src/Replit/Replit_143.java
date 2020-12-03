@@ -5,15 +5,22 @@ import java.util.Arrays;
 public class Replit_143 {
     public static void main(String[] args) {
 
-        int[][] multiplicationTable = new int[4][4];
+        int[][] multiplicationTable = new int[10][10];
 
         //TODO: type your code below
-        for (int i = 0; i < multiplicationTable.length; i++){
-            multiplicationTable[0][0] = i;
-            multiplicationTable[0][1] = i;
+        for (int i = 0; i < multiplicationTable.length; i++) {
+            for (int j = 0; j < multiplicationTable.length; j++) {
+                if (i == 0){
+                    multiplicationTable[i][j] = j+1;
+                } else if (j == 0) {
+                    multiplicationTable[i][j] = i+1;
+                }else{
+                    multiplicationTable[i][j]=(i+1)*(j+1);
+                }
+
+            }
 
         }
-
 
 
         //Do not modify below line it will be used to test your code. And

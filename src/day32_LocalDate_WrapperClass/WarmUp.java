@@ -37,6 +37,29 @@ public class WarmUp {
         result[result.length - 1] = element;
         return result;
     }
+
+    public static char[] addElement(char[] arr, char element) {
+
+        char[] result = new char[arr.length + 1];
+
+        for (int i = 0; i < arr.length; i++) {
+            result[i] = arr[i];
+        }
+        result[result.length - 1] = element;
+        return result;
+    }
+
+    public static String[] addElement(String[] arr, String element) {
+
+        String[] result = new String[arr.length + 1];
+
+        for (int i = 0; i < arr.length; i++) {
+            result[i] = arr[i];
+        }
+        result[result.length - 1] = element;
+        return result;
+    }
+
 }
 
 
