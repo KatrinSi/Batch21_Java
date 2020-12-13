@@ -1,6 +1,6 @@
 package day32_LocalDate_WrapperClass;
 
-import Day35_CustomClass.Students;
+import day35_CustomClass.Students;
 
 public class Cybertek_Students {
     public static void main(String[] args) {
