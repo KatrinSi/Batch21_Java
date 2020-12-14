@@ -6,18 +6,17 @@ import java.util.Arrays;
 public class Replit_214 {
     public static void main(String[] args)
     {
-        ArrayList<String>  arr = new ArrayList<String>(Arrays.asList("2", "66 6 uhukh", "foo bar"));
+        ArrayList<String>  arr = new ArrayList<String>(Arrays.asList("2", "uhukh njk", "foo bar"));
         System.out.println(search(arr, "uhukh"));
     }
 
-    public static String search(ArrayList<String> r, String find){
-        String result = "";
-        for (String each : r){
-            if (each.contains(find)){
-                result = each;
-            }else{
-                result = "search failed";
+    public static String search(ArrayList<String> strList, String find){
+        String result = "search failed";
+        for (int i = 0; i < strList.size();i++){
+            if (strList.get(i).contains(find)){
+                result = strList.get(i);
             }
+
         }
         return result;
     }
