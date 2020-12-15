@@ -2,7 +2,8 @@ package Replit;
 
 public class Stock_Class {
     public String tickerSymbol, companyName;
-    public int price, totalShares;
+    public int totalShares;
+    public int price;
     public double percentChange;
     public long marketCap;
 
@@ -18,6 +19,7 @@ public class Stock_Class {
     public void adjustPrice(int value){
         percentChange = (100*value)/price;
         price += value;
+        marketCap = totalShares*(long)price;
 
     }
     public String toString(){
