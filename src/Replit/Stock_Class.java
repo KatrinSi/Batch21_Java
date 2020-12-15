@@ -1,7 +1,7 @@
 package Replit;
 
 public class Stock_Class {
-    public String tickerSymbol, companyName, pm;
+    public String tickerSymbol, companyName;
     public int price, totalShares;
     public double percentChange;
     public long marketCap;
@@ -17,17 +17,11 @@ public class Stock_Class {
 
     public void adjustPrice(int value){
         percentChange = (100*value)/price;
-        if (value > 0){
-            pm = "+";
-            price +=value;
-        }else{
-            pm = "-";
-            price -=value;
-        }
+        price += value;
 
     }
     public String toString(){
-        return "Ticker Symbol: "+tickerSymbol+"\nCompany: "+companyName+"\nCurrent Price: $"+ price+"("+pm+percentChange+"%)\nMarket Cap: $"+marketCap;
+        return "Ticker Symbol: "+tickerSymbol+"\nCompany: "+companyName+"\nCurrent Price: $"+ price+"("+percentChange+"%)\nMarket Cap: $"+marketCap;
     }
 }
 
