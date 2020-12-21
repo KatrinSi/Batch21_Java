@@ -2,28 +2,29 @@ package Replit;
 
 public class Stock_Class {
     public String tickerSymbol, companyName;
-    public int totalShares;
-    public int price;
+    public int totalShares,price;
     public double percentChange;
     public long marketCap;
 
 
-    public Stock_Class(String tickerSymbol, String companyName, int price, int totalShares){
+    public Stock_Class(String tickerSymbol, String companyName, int price, int totalShares) {
         this.tickerSymbol = tickerSymbol.toUpperCase();
         this.companyName = companyName;
         this.price = price;
         this.totalShares = totalShares;
-        marketCap = totalShares*price;
+        marketCap = totalShares * price;
     }
 
-    public void adjustPrice(int value){
-        percentChange = (100*value)/price;
+    public void adjustPrice(int value) {
+        percentChange = (double)value / (double)price;
         price += value;
-        marketCap = totalShares*(long)price;
+        marketCap = totalShares * price;
 
     }
-    public String toString(){
-        return "Ticker Symbol: "+tickerSymbol+"\nCompany: "+companyName+"\nCurrent Price: $"+ price+"("+percentChange+"%)\nMarket Cap: $"+marketCap;
+
+    public String toString() {
+        return "Ticker Symbol: " + tickerSymbol + "\nCompany: " + companyName + "\nCurrent Price: $"
+                + price + "(" + percentChange + "%)\nMarket Cap: $" + marketCap;
     }
 }
 
