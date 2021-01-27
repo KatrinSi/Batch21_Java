@@ -1,6 +1,6 @@
 package day43_Inheritance.PersonTask;
 
-public class Tester extends Employee {
+public final class Tester extends Employee {
 
     public Tester(String name, char gender, int age, double hourlyRate, String jobTitle, String ID){
         setInfo(name, gender, age, hourlyRate, jobTitle, ID);

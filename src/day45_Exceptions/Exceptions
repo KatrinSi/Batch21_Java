@@ -1,0 +1,45 @@
+OOP:
+    Encapsulation
+    Inheritance
+        (without Inheritance no Abstraction or Polymorphism!)
+    Abstraction
+    Polymorphism
+
+    public access modifier means Global
+
+    One constructor can call only one constructor!
+
+Checked and unchecked exceptions:
+
+//Unexpected event! --> unchecked exception --> occurs at RUN time
+//Unwanted event!   --> checked exception   --> occurs right away at COMPILE time
+
+Handling Exceptions
+1. try & catch blocks <-- must be together! (both checked and unchecked exceptions)
+try{
+    exception statements;
+}catch(Exception class e){
+    statement;
+}
+
+RuntimeException for unknown kinds of exception
+
+MultiCatch block is only for unchecked exceptions!
+
+Finally block. It ALWAYS gets executed!
+
+2. throws Keyword. For checked exceptions ONLY!!!
+Cheap way of Handling.
++ This Throws keyword acts faster.
++ Less code.
+
+- Temporary
+
+
+
+Throws (for checked exceptions, temporary fixing)
+VS
+Try Catch (for any type of exception, throws keyword in a method signature) Permanent solution
+
+To create throw:
+throw new RuntimeException("Invalid age);

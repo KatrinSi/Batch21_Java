@@ -1,0 +1,63 @@
+IS A relation:
+class extends class
+
+class implements interface(s)
+
+interfaces extends interface(s)
+
+class extends class implements interface
+
+in interface all variables are final by default
+
+instance belong to an object
+static belong to a class
+
+
+abstract CANNOT be final!
+
+throws handle an Exception
+throw creates an Exception
+
+Interface cannot inherit from a class!!
+
+// by default
+public abstract void downloadApp();
+
+interface is a blueprint of a class
+
+abstract class = super class
+interface = supertype
+
+POLYMORPHISM - different(multiple)+other = many forms
+pre-condition of poly - there needs to be inheritance
+Parent referents to child
+ex:
+
+ChromeDriver driver = new ChromeDriver();
+FirefoxDriver driver2 = new FirefoxDriver();
+
+ WebDriver driver;  - one variable for diff objects
+ driver = new ChromeDriver();
+ driver = new FirefoxDriver();
+
+
+instanceOf (boolean)   keyword
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

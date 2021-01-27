@@ -1,0 +1,39 @@
+Abstraction: concentration on essential/important things.
+Hiding implementation and details of a method.
+
+Inheritance is a pre-condition of an Abstraction!!
+
+
+1. abstract class ABSTRACT keyword
+2. interface
+
+
+Regular class cannot have an abstract method!
+Abstract class:
+- cannot have any objects!!
+Abstract method:
+- does not have a body/implementation
+- cannot be private, FINAL, static!!!
+- no restrictions for return type
+
+We CANNOT create an object of an abstract class!
+We can implement abstract methods only through overriding
+ONLY 2 ways to achieve abstraction:
+- abstract class
+- interface
+
+Interface - a blueprint of a class. NOT a class!
+Specifies the behavior/action that the class needs to implement
+
+Abstract - a class
+Interface - NOT a class
+
+Interface - we can use only PUBLIC access modifier.
+- 100% abstraction. Should be overridden
+
+Interface cannot have Instant variables and methods.
+By default in interface static and final
+
+In lambda given variables are immutable
+
+list.forEach(p->{  });

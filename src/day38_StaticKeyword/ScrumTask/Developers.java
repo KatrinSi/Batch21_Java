@@ -1,6 +1,6 @@
 package day38_StaticKeyword.ScrumTask;
 
-public class Developers {
+public final class Developers {
     public String name, ID, jobTitle, companyName;
     public int salary;
     public char gender;
@@ -23,7 +23,7 @@ public class Developers {
     }
 
 
-    public String toString() {
+    public final String toString() {
         return "Developers{" +
                 "name='" + name + '\'' +
                 ", ID='" + ID + '\'' +
