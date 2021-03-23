@@ -7,29 +7,24 @@ public class Task6_FINRA {
     and for numbers which are a multiple of 5, print "RA" instead of the number.
     For numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
      */
-
     public static void main(String[] args) {
-        int num = 30;
-        FINRA(num);
+        FINRA();
     }
 
-    public static void FINRA(int num) {
+    public static void FINRA() {
         String result = "";
 
-        for (int i = 1; i <= 30; i++){
-            if(i%3==0&&i%5==0){
-                result+="FINRA ";
-            }else if (i%3==0){
-                result+="FIN ";
-            }else if(i%5 ==0) {
+        for (int i = 1; i <= 30; i++) {
+            if (i % 15 == 0) {
+                result += "FINRA ";
+            } else if (i % 3 == 0) {
+                result += "FIN ";
+            } else if (i % 5 == 0) {
                 result += "RA ";
-            }else {
-                result+=i+" ";
+            } else {
+                result += i + " ";
             }
         }
-        System.out.println("actual result: "+ result);
-
+        System.out.println(result);
     }
-
-
 }

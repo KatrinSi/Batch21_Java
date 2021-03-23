@@ -15,7 +15,7 @@ public abstract class Car {//generic
         this.price = price;
     }
 
-    public abstract void start();
+    abstract void start();
 
     @Override
     public String toString() {
